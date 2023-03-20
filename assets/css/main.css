@@ -1,5 +1,5 @@
 .wrapper {
-    height: 100%;
+    height: auto;
     max-width: 422px;
     /* background-color: palevioletred; */
     margin: 0 auto;
@@ -193,6 +193,7 @@
     display: inline-block;
     word-break: break-word;
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .posts-item__img {
