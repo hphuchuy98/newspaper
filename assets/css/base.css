@@ -49,6 +49,10 @@ html {
     font-weight: bold;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .bold-500 {
     font-weight: 500;
 }
