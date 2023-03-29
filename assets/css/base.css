@@ -28,6 +28,10 @@ body {
     margin: 0;
 }
 
+@font-face {
+    font-family: Barlow Condensed;
+    src: url(../fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
+}
 
 html {
     height: 100%;
@@ -67,4 +71,16 @@ html {
 
 .square {
     list-style-type: square;
+}
+
+.red {
+    color: rgb(255, 1, 1);
+}
+
+.f-s-45 {
+    font-size: 4.2rem !important;
+}
+
+.line-h-4 {
+    line-height: 5rem !important;
 }

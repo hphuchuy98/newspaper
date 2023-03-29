@@ -441,3 +441,159 @@
 .certification-item img {
     width: 100%;
 }
+ 
+/* slider */
+.slider {
+    max-width: 100%;
+    position: relative;
+}
+
+.slider-wrapper {
+   width: 100%;
+   height: auto;
+   position: relative;
+   overflow: hidden;
+
+}
+
+.slider-main {
+    display: flex;
+    position: relative;
+    transition:  transform 0.25s linear;
+}
+
+.slider-item {
+    max-width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    user-select: none;
+}
+
+.slider-item__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-item img {
+    width: 90%;
+    object-fit: cover;
+}
+
+.slider-item__text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-item__text h3 {
+    font-family: "Barlow Condensed", sans-serif;
+    color: rgb(5, 31, 77);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    margin: 5px 0;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+}
+
+.slider-next,
+.slider-prev {
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black-color);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+/* order */
+.order {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    background-color: #E3EEF2;
+}
+
+.order-item {
+    width: 100%;
+    /* position: relative; */
+}
+
+.order-intro {
+    width: 100%;
+    height: auto;
+    padding: 0 5px 0 40px;
+    margin-top: 20px;
+}
+
+.order-intro__box {
+    width: 100%;
+    height: 40px;
+    background-color: #12468D;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-intro__text h3 {
+    color: var(--white-color);
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+.order-paint {
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.order-paint__box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.order-paint__img{
+    max-width: 70%;
+    position: relative;
+    text-align: center;
+}
+
+.order-paint__img svg {
+    width: 100%;
+    /* fill: #0667AF; */
+}
+
+.order-paint__img h3 {
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 1.4;
+}
