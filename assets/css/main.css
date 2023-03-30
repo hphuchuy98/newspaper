@@ -529,7 +529,11 @@
     width: 100%;
     height: auto;
     padding: 20px 10px;
-    background-color: #E3EEF2;
+    background-size: cover;
+    background-attachment: scroll;
+    background-image: url(https://w.ladicdn.com/s768x1509/5c7362c6c417ab07e5196b05/vtc-20200723094927.jpg);
+    background-position: center top;
+    background-repeat: repeat;
 }
 
 .order-item {
@@ -565,20 +569,21 @@
     position: relative;
     width: 100%;
     margin-top: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .order-paint__box {
     position: relative;
     width: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+
 }
 
 .order-paint__img{
     max-width: 70%;
     position: relative;
     text-align: center;
+    float: right;
 }
 
 .order-paint__img svg {
@@ -596,4 +601,241 @@
     text-align: center;
     letter-spacing: 0px;
     line-height: 1.4;
+}
+
+.order-text {
+    clear: right;
+    
+}
+
+.border {
+    border-left: 3px solid rgb(163, 161, 161);
+    padding-left: 10px;
+}
+
+.order-text .text-blue {
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+    color: rgb(34, 80, 203);
+    text-align: left;
+    line-height: 1.2;
+    margin: 2px;
+}
+
+.order-text .text-red-line {
+    text-decoration-line: line-through;
+    color: rgb(193, 37, 37);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.order-text .text-red {
+    color: rgb(193, 37, 37);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1.4;
+    margin: 10px 0;
+
+}
+
+/* register */
+.register {
+    position: relative;
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #202064;
+    border-radius: 4px;
+    padding-bottom: 1px;
+}
+
+.register-text {
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.register-text h3 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 1.4;
+}
+
+.register-time {
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+}
+
+.register-tiem__box {
+    width: 60%;
+    display: flex;
+}
+
+.register-time__item {
+    height: 60px;
+    width: calc((100% - 10px * 3) / 4);
+    /* background-color: #0667AF; */
+    margin: 0 4px;
+}
+
+.register-time__item-box {
+    width: 50px;
+    height: 35px;
+    background-color: #FCEBC8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-time__item-box span {
+    margin: 0;
+    color: #385360;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.register-time__item-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.register-time__item-text span {
+    color: rgb(176, 182, 199);
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.register-list-paragraph {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.register-list-paragraph ul {
+    list-style: none;
+}
+
+.register-list-paragraph ul li {
+    -webkit-font-smoothing: antialiased
+}
+
+#register-list ul li::before {
+    content: counter(linum, disc);
+    font-size: 40px;
+    /* top: -20px; */
+    /* padding-top: 10px; */
+    margin-top: -21px;
+
+}
+
+.register-list-paragraph ul li::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 40px;
+}
+
+.register-form-all {
+    width: 94%;
+    margin: 0 auto;
+    /* background-color: pink; */
+    margin-bottom: 30px;
+}
+
+.register-form {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    line-height: 1.6
+}
+
+.register-element {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: var(--white-color);
+}
+
+.register-form-container {
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.register-form-control {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    font-size: 1.6rem;
+}
+
+.register-element-box {
+    width: 100%;
+    height: auto;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 5px 0;
+    line-height: 1.6;
+}
+
+.register-form-checkbox-item {
+    display: flex;
+    align-items: center;
+    border: none;
+    margin: 5px;
+}
+
+.register-element-box span {
+    font-size: 15px;
+}
+
+.register-btn {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.register-btn-element {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 226, 16, 1.0), rgba(235, 113, 1, 1.0));
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.register-btn-element span {
+    color: rgb(20, 20, 81);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
 }
