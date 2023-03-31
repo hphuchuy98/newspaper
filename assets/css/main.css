@@ -635,7 +635,7 @@
 
 .order-text .text-red {
     color: rgb(193, 37, 37);
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
     text-align: left;
     letter-spacing: 0px;
@@ -653,6 +653,7 @@
     background-color: #202064;
     border-radius: 4px;
     padding-bottom: 1px;
+    -webkit-box-shadow: 2px 7px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .register-text {
@@ -685,8 +686,7 @@
 .register-time__item {
     height: 60px;
     width: calc((100% - 10px * 3) / 4);
-    /* background-color: #0667AF; */
-    margin: 0 4px;
+    margin: 0 6px;
 }
 
 .register-time__item-box {
@@ -808,7 +808,13 @@
 }
 
 .register-element-box span {
-    font-size: 15px;
+    font-size: 13px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.register-element-box input {
+    cursor: pointer;
 }
 
 .register-btn {
@@ -838,4 +844,56 @@
     font-weight: bold;
     text-align: center;
     line-height: 1.6;
+}
+
+.order-note {
+    color: rgb(255, 1, 1);
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.order-note__box {
+    width: 100%;
+    display: inline-block;
+    word-break: break-word;
+}
+
+.order-img {
+    width: 100%;
+    margin: 20px 0 40px;
+    position: relative;
+    /* overflow: hidden; */
+    pointer-events: none;
+}
+
+.order-img__box {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.order-img__box img {
+    width: 80%;
+}
+
+.order-img__box .best-seller {
+    position: absolute;
+    width: 128.552px;
+    height: 125.948px;
+    object-fit: cover;
+    bottom: -40px;
+}
+
+.comment {
+    width: 100%;
+    height: auto;
+    background-color: palevioletred;
+    margin-top: 20px;
+}
+
+.comment-container {
+    width: 100%;
 }
